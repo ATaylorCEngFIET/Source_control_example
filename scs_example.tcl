@@ -153,7 +153,7 @@ set obj [get_filesets constrs_1]
 # Add/Import constrs file and set constrs file properties
 set file "[file normalize "$origin_dir/io.xdc"]"
 set file_imported [import_files -fileset constrs_1 $file]
-set file "new/io.xdc"
+set file "io.xdc"
 set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
 set_property -name "file_type" -value "XDC" -objects $file_obj
 
